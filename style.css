@@ -1,3 +1,252 @@
 body{
-    background-color: #000000;
+    background-color:#ffffff;
+    font-family:Arial,sans-serif;
+    margin:0;
+    color:#000000;
+}
+header{
+    padding:25px 20px;
+    border-bottom:2px solid #000000;
+    text-align:center;
+}
+header h1{
+    padding:15px;
+    margin:0;
+    font-size:40px;
+    border:3px solid #000000;
+    border-radius:8px;
+}
+.tagline{
+    font-size:17px;
+    margin:15px 0;
+}
+nav{
+    text-align:center;
+    margin:20px 0 0;
+}
+nav a{
+    margin:0 10px;
+    text-decoration:none;
+    color:#000000;
+    font-weight:bold;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+section{
+    margin:40px 0;
+}
+section h2{
+    font-size:28px;
+}
+section p{
+    font-size:17px;
+    line-height:1.5;
+}
+.hero{
+    text-align:center;
+    padding:30px 20px;
+    border:2px solid #000000;
+    border-radius:10px;
+}
+.hero h2{
+    margin-top:0;
+}
+.search-area{
+    max-width:600px;
+    margin:25px auto 0;
+}
+.search-area label{
+    display:block;
+    font-weight:bold;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+input{
+    width:100%;
+    box-sizing:border-box;
+    padding:12px;
+    border:2px solid #000000;
+    border-radius:5px;
+    font-size:16px;
+}
+input:focus{
+    outline:3px solid #bbbbbb;
+}
+.search-buttons{
+    margin-top:15px;
+}
+button{
+    padding:10px 16px;
+    margin:5px;
+    border:2px solid #000000;
+    border-radius:5px;
+    background:#ffffff;
+    color:#000000;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+}
+button:hover{
+    background:#eeeeee;
+}
+button:focus{
+    outline:3px solid #888888;
+}
+#resources{
+    text-align:center;
+}
+#categories{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px auto;
+    max-width:750px;
+}
+#categories button{
+    min-width:120px;
+}
+#categories button.selected{
+    background:#000000;
+    color:#ffffff;
+}
+#showAll{
+    margin-top:10px;
+}
+#quickHelp{
+    text-align:center;
+    border:2px solid #000000;
+    border-radius:10px;
+    padding:20px;
+}
+.quick-help-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+#results{
+    margin-top:40px;
+}
+#results h2{
+    text-align:center;
+    border-bottom:2px solid #000000;
+    padding-bottom:10px;
+}
+.resource-card{
+    border:2px solid #000000;
+    border-radius:10px;
+    padding:20px;
+    margin:15px auto;
+    max-width:600px;
+    transition:transform 0.2s;
+}
+.resource-card:hover{
+    transform:translateY(-3px);
+}
+.resource-card h3{
+    margin-top:0;
+    font-size:22px;
+    border-bottom:1px solid #000000;
+    padding-bottom:8px;
+}
+.resource-card p{
+    margin:8px 0;
+}
+.resource-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin:12px 0;
+}
+.resource-tag{
+    border:1px solid #000000;
+    border-radius:4px;
+    padding:4px 8px;
+    font-size:12px;
+    font-weight:bold;
+}
+#resourceInfo{
+    background:#ffffff;
+    border:2px solid #000000;
+    border-radius:10px;
+    padding:20px;
+    margin:20px auto;
+    max-width:600px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+#resourceInfo h2{
+    margin-top:0;
+}
+#resourceInfo p{
+    margin:10px 0;
+}
+#resourceInfo a{
+    color:#000000;
+    font-weight:bold;
+}
+#closeInfo{
+    margin-top:15px;
+}
+#noResults{
+    text-align:center;
+    font-weight:bold;
+    margin:30px;
+}
+#about{
+    border-top:2px solid #000000;
+    padding-top:30px;
+}
+#about h2{
+    text-align:center;
+}
+#about p{
+    max-width:700px;
+    margin:15px auto;
+}
+.notice{
+    border-left:4px solid #000000;
+    padding-left:12px;
+    font-size:14px;
+}
+footer{
+    text-align:center;
+    border-top:2px solid #000000;
+    margin-top:50px;
+    padding:25px;
+}
+footer p{
+    margin:5px;
+}
+@media(max-width:600px){
+    header{
+        padding:15px 10px;
+    }
+    main{
+        padding:10px;
+    }
+    header h1{
+        font-size:30px;
+    }
+    nav a{
+        display:block;
+        margin:10px;
+    }
+    .hero{
+        padding:20px 10px;
+    }
+    button{
+        margin:5px 2px;
+    }
+    .resource-card{
+        margin:15px 5px;
+    }
+    #resourceInfo{
+        margin:20px 5px;
+    }
 }

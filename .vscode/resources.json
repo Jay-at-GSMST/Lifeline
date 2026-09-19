@@ -1,0 +1,98 @@
+[
+    {
+        "id":1,
+        "title":"Lawrenceville Co-Op",
+        "category":"food",
+        "description":"Food assistance for people in need in the Lawrenceville area.",
+        "location":"Lawrenceville, GA 30046",
+        "cost":"Free assistance",
+        "contact":"770-339-7887",
+        "website":"https://www.gwinnettcounty.com/government/departments/community-services/food-security-resources",
+        "keywords":["food","groceries","meals","hunger","food bank"],
+        "tags":["FOOD","LOCAL"]
+    },
+    {
+        "id":2,
+        "title":"HomeFirst Gwinnett",
+        "category":"housing",
+        "description":"Connects people experiencing homelessness with housing services and participating agencies in Gwinnett County.",
+        "location":"Gwinnett County, GA",
+        "cost":"Contact provider",
+        "contact":"770-822-8850",
+        "website":"https://www.gwinnettcounty.com/government/departments/financial-services/grants/housing-assistance",
+        "keywords":["housing","rent","shelter","homeless","rental assistance"],
+        "tags":["HOUSING","LOCAL"]
+    },
+    {
+        "id":3,
+        "title":"Gwinnett County Employment",
+        "category":"jobs",
+        "description":"View current employment opportunities with Gwinnett County Government.",
+        "location":"Lawrenceville, GA",
+        "cost":"Free",
+        "contact":"770-822-7915",
+        "website":"https://www.gwinnettcounty.com/government/departments/human-resources/employment-testing",
+        "keywords":["jobs","work","employment","career","job"],
+        "tags":["JOBS","EMPLOYMENT"]
+    },
+    {
+        "id":4,
+        "title":"Ride Gwinnett",
+        "category":"transportation",
+        "description":"Gwinnett County public transportation service offering local bus, microtransit, and paratransit services.",
+        "location":"Gwinnett County, GA",
+        "cost":"Fare varies by service",
+        "contact":"770-822-5010",
+        "website":"https://www.gwinnettcounty.com/government/departments/transportation/gwinnett-county-transit/customer-service",
+        "keywords":["transportation","bus","train","ride","travel","transit"],
+        "tags":["TRANSPORTATION","LOCAL"]
+    },
+    {
+        "id":5,
+        "title":"Gwinnett County Education Resources",
+        "category":"education",
+        "description":"Find education and learning resources available throughout Gwinnett County.",
+        "location":"Gwinnett County, GA",
+        "cost":"Varies",
+        "contact":"Contact the organization directly",
+        "website":"https://www.gwinnettcounty.com/about/education-libraries",
+        "keywords":["education","school","tutoring","college","learning","library"],
+        "tags":["EDUCATION","LOCAL"]
+    },
+    {
+        "id":6,
+        "title":"Georgia Lifeline Program",
+        "category":"technology",
+        "description":"A program that helps eligible low-income consumers afford broadband or telephone service.",
+        "location":"Georgia",
+        "cost":"Discount available for eligible subscribers",
+        "contact":"Visit the official website for eligibility and enrollment information",
+        "website":"https://gta.georgia.gov/policies-and-programs/broadband/lets-connect-georgia/help-consumers",
+        "keywords":["technology","internet","wifi","phone","broadband","computer"],
+        "tags":["TECHNOLOGY","INTERNET"]
+    },
+    {
+        "id":7,
+        "title":"GeorgiaLegalAid.org",
+        "category":"legal",
+        "description":"Provides free legal information and helps people find legal assistance.",
+        "location":"Georgia",
+        "cost":"Free information; eligibility may apply for legal services",
+        "contact":"404-524-5811",
+        "website":"https://www.georgialegalaid.org/find-legal-help",
+        "keywords":["legal","lawyer","law","court","rights","legal aid"],
+        "tags":["LEGAL","FREE"]
+    },
+    {
+        "id":8,
+        "title":"Gwinnett County Health Department",
+        "category":"health",
+        "description":"Provides public health services through health centers in Gwinnett County.",
+        "location":"Gwinnett County, GA",
+        "cost":"Varies by service",
+        "contact":"770-339-4283",
+        "website":"https://www.gwinnettcounty.com/government/departments/community-services/health-human-services",
+        "keywords":["health","clinic","doctor","medical","healthcare","public health"],
+        "tags":["HEALTH","LOCAL"]
+    }
+]

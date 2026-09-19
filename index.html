@@ -1,9 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-    </head>
-    <body>
-        <H1>HELLO WORLD!</H1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LIFELINE helps people find community resources for food, housing, education, jobs, transportation, technology, legal help, and health.">
+    <title>LIFELINE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LIFELINE</h1>
+        <p class="tagline">Helping people find the support they need.</p>
+        <nav aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#resources">Resources</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Find the help you need</h2>
+            <p>Search for resources that can make a difference.</p>
+            <div class="search-area">
+                <label for="searchInput">What do you need help with?</label>
+                <input type="text" id="searchInput" placeholder="Food, jobs, housing...">
+                <label for="locationInput">City or ZIP code</label>
+                <input type="text" id="locationInput" placeholder="Enter your city or ZIP code">
+                <div class="search-buttons">
+                    <button id="searchButton">SEARCH</button>
+                    <button id="clearSearch">CLEAR</button>
+                </div>
+            </div>
+        </section>
+        <section id="resources">
+            <h2>What do you need help with?</h2>
+            <div id="categories">
+                <button data-category="food">Food</button>
+                <button data-category="housing">Housing</button>
+                <button data-category="education">Education</button>
+                <button data-category="jobs">Jobs</button>
+                <button data-category="transportation">Transportation</button>
+                <button data-category="technology">Technology</button>
+                <button data-category="legal">Legal Help</button>
+                <button data-category="health">Health</button>
+            </div>
+            <button id="showAll">SHOW ALL</button>
+        </section>
+        <section id="quickHelp">
+            <h2>Quick Help</h2>
+            <div class="quick-help-buttons">
+                <button data-category="food">I need food</button>
+                <button data-category="housing">I need housing</button>
+                <button data-category="jobs">I need a job</button>
+                <button data-category="health">I need health help</button>
+            </div>
+        </section>
+        <section id="results" aria-live="polite">
+            <h2>AVAILABLE RESOURCES</h2>
+        </section>
+        <section id="resourceInfo" hidden>
+            <h2 id="infoTitle"></h2>
+            <p id="infoDescription"></p>
+            <p>
+                <strong>Category:</strong>
+                <span id="infoCategory"></span>
+            </p>
+            <p>
+                <strong>Cost:</strong>
+                <span id="infoCost"></span>
+            </p>
+            <p>
+                <strong>Location:</strong>
+                <span id="infoLocation"></span>
+            </p>
+            <p>
+                <strong>Contact:</strong>
+                <span id="infoContact"></span>
+            </p>
+            <p>
+                <strong>Website:</strong>
+                <a id="infoWebsite" href="#" target="_blank" rel="noopener noreferrer">Visit website</a>
+            </p>
+            <button id="closeInfo">CLOSE</button>
+        </section>
+        <section id="about">
+            <h2>About LIFELINE</h2>
+            <p>
+                LIFELINE is designed to make it easier for people to find
+                support with everyday needs and difficult situations.
+            </p>
+            <p>
+                The website organizes resources into categories such as food,
+                housing, education, jobs, transportation, technology, legal
+                help, and health.
+            </p>
+            <p class="notice">
+                Resource information should be checked before relying on it.
+                Services, hours, eligibility rules, and contact information
+                can change.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>LIFELINE</p>
+        <p>Helping all who need it</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
