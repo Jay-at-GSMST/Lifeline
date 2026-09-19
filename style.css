@@ -1,36 +1,43 @@
 body{
-    background-color:#ffffff;
+    background:linear-gradient(135deg,#e8f3ff,#cfe5ff,#f5f9ff);
     font-family:Arial,sans-serif;
     margin:0;
-    color:#000000;
+    color:#111827;
 }
 header{
     padding:25px 20px;
-    border-bottom:2px solid #000000;
+    background:rgba(255,255,255,0.9);
+    border-bottom:3px solid #2563eb;
     text-align:center;
+    box-shadow:0 4px 15px rgba(37,99,235,0.12);
 }
 header h1{
     padding:15px;
     margin:0;
     font-size:40px;
-    border:3px solid #000000;
-    border-radius:8px;
+    color:#1d4ed8;
+    border:3px solid #2563eb;
+    border-radius:12px;
+    background:#ffffff;
+    box-shadow:0 5px 15px rgba(37,99,235,0.15);
 }
 .tagline{
     font-size:17px;
     margin:15px 0;
+    color:#374151;
 }
 nav{
     text-align:center;
     margin:20px 0 0;
 }
 nav a{
-    margin:0 10px;
+    margin:0 12px;
     text-decoration:none;
-    color:#000000;
+    color:#1d4ed8;
     font-weight:bold;
 }
 nav a:hover{
+    color:#111827;
     text-decoration:underline;
 }
 main{
@@ -43,6 +50,7 @@ section{
 }
 section h2{
     font-size:28px;
+    color:#111827;
 }
 section p{
     font-size:17px;
@@ -50,12 +58,19 @@ section p{
 }
 .hero{
     text-align:center;
-    padding:30px 20px;
-    border:2px solid #000000;
-    border-radius:10px;
+    padding:40px 25px;
+    background:rgba(255,255,255,0.92);
+    border:2px solid #93c5fd;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(30,64,175,0.12);
 }
 .hero h2{
     margin-top:0;
+    font-size:34px;
+    color:#1d4ed8;
+}
+.hero p{
+    color:#4b5563;
 }
 .search-area{
     max-width:600px;
@@ -66,40 +81,49 @@ section p{
     font-weight:bold;
     margin-top:15px;
     margin-bottom:5px;
+    text-align:left;
 }
 input{
     width:100%;
     box-sizing:border-box;
-    padding:12px;
-    border:2px solid #000000;
-    border-radius:5px;
+    padding:13px;
+    border:2px solid #93c5fd;
+    border-radius:8px;
     font-size:16px;
+    background:#ffffff;
 }
 input:focus{
-    outline:3px solid #bbbbbb;
+    outline:3px solid #bfdbfe;
+    border-color:#2563eb;
 }
 .search-buttons{
     margin-top:15px;
 }
 button{
-    padding:10px 16px;
+    padding:11px 18px;
     margin:5px;
-    border:2px solid #000000;
-    border-radius:5px;
+    border:2px solid #2563eb;
+    border-radius:8px;
     background:#ffffff;
-    color:#000000;
+    color:#1d4ed8;
     cursor:pointer;
     font-size:15px;
     font-weight:bold;
+    transition:0.2s;
 }
 button:hover{
-    background:#eeeeee;
+    background:#2563eb;
+    color:#ffffff;
+    transform:translateY(-2px);
 }
 button:focus{
-    outline:3px solid #888888;
+    outline:3px solid #bfdbfe;
 }
 #resources{
     text-align:center;
+}
+#resources h2{
+    color:#1d4ed8;
 }
 #categories{
     display:flex;
@@ -113,17 +137,23 @@ button:focus{
     min-width:120px;
 }
 #categories button.selected{
-    background:#000000;
+    background:#1d4ed8;
     color:#ffffff;
+    border-color:#1d4ed8;
 }
 #showAll{
     margin-top:10px;
 }
 #quickHelp{
     text-align:center;
-    border:2px solid #000000;
-    border-radius:10px;
-    padding:20px;
+    background:rgba(255,255,255,0.9);
+    border:2px solid #93c5fd;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(30,64,175,0.1);
+}
+#quickHelp h2{
+    color:#1d4ed8;
 }
 .quick-help-buttons{
     display:flex;
@@ -135,28 +165,35 @@ button:focus{
 }
 #results h2{
     text-align:center;
-    border-bottom:2px solid #000000;
-    padding-bottom:10px;
+    color:#1d4ed8;
+    border-bottom:3px solid #93c5fd;
+    padding-bottom:12px;
 }
 .resource-card{
-    border:2px solid #000000;
-    border-radius:10px;
-    padding:20px;
-    margin:15px auto;
+    background:#ffffff;
+    border:2px solid #bfdbfe;
+    border-radius:15px;
+    padding:22px;
+    margin:18px auto;
     max-width:600px;
-    transition:transform 0.2s;
+    box-shadow:0 6px 18px rgba(30,64,175,0.1);
+    transition:0.2s;
 }
 .resource-card:hover{
-    transform:translateY(-3px);
+    transform:translateY(-4px);
+    border-color:#60a5fa;
+    box-shadow:0 10px 25px rgba(30,64,175,0.16);
 }
 .resource-card h3{
     margin-top:0;
     font-size:22px;
-    border-bottom:1px solid #000000;
+    color:#1d4ed8;
+    border-bottom:1px solid #dbeafe;
     padding-bottom:8px;
 }
 .resource-card p{
     margin:8px 0;
+    color:#374151;
 }
 .resource-tags{
     display:flex;
@@ -165,29 +202,32 @@ button:focus{
     margin:12px 0;
 }
 .resource-tag{
-    border:1px solid #000000;
-    border-radius:4px;
-    padding:4px 8px;
+    border:1px solid #60a5fa;
+    border-radius:5px;
+    padding:5px 9px;
     font-size:12px;
     font-weight:bold;
+    color:#1d4ed8;
+    background:#eff6ff;
 }
 #resourceInfo{
     background:#ffffff;
-    border:2px solid #000000;
-    border-radius:10px;
-    padding:20px;
+    border:3px solid #2563eb;
+    border-radius:15px;
+    padding:25px;
     margin:20px auto;
     max-width:600px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    box-shadow:0 10px 30px rgba(30,64,175,0.18);
 }
 #resourceInfo h2{
     margin-top:0;
+    color:#1d4ed8;
 }
 #resourceInfo p{
     margin:10px 0;
 }
 #resourceInfo a{
-    color:#000000;
+    color:#1d4ed8;
     font-weight:bold;
 }
 #closeInfo{
@@ -199,24 +239,29 @@ button:focus{
     margin:30px;
 }
 #about{
-    border-top:2px solid #000000;
-    padding-top:30px;
+    background:rgba(255,255,255,0.75);
+    border-top:3px solid #93c5fd;
+    padding:30px 20px;
+    border-radius:15px;
 }
 #about h2{
     text-align:center;
+    color:#1d4ed8;
 }
 #about p{
     max-width:700px;
     margin:15px auto;
 }
 .notice{
-    border-left:4px solid #000000;
+    border-left:4px solid #2563eb;
     padding-left:12px;
     font-size:14px;
 }
 footer{
     text-align:center;
-    border-top:2px solid #000000;
+    background:#1e3a8a;
+    color:#ffffff;
+    border-top:3px solid #2563eb;
     margin-top:50px;
     padding:25px;
 }
@@ -238,7 +283,10 @@ footer p{
         margin:10px;
     }
     .hero{
-        padding:20px 10px;
+        padding:25px 10px;
+    }
+    .hero h2{
+        font-size:28px;
     }
     button{
         margin:5px 2px;
